@@ -1,0 +1,32 @@
+#chat {
+    height: 330px;
+    width: 221px;
+    background-color: lightgray;
+    overflow-x: scroll;
+}
+
+div#stream {
+    width: 640px;
+    height: 360px !important;
+    float: left;
+}
+
+.stream-dimensions.vjs-fluid {
+    padding-top: 0px !important;
+}
+.chatBox {
+    float: left;
+}
+
+input#profilePicture {
+    display: none;
+}
+
+.profilepictureedit {
+    width: 300px;
+    height: 300px;
+}
+
+.profilepictureedit:hover {
+    filter: grayscale(30%);
+}

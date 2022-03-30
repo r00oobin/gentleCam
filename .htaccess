@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule login htdocs/user/login.php [L,QSA]
+RewriteRule register htdocs/user/register.php [L,QSA]
+RewriteRule logout api/user/logout.php [L,QSA]
+RewriteRule settings htdocs/user/update.php [L,QSA]
+RewriteRule shop shop.gentlecam.com [L,QSA]
+RewriteRule 404 htdocs/error/404.php [L,QSA]
+RewriteRule ^([\w-]+)/?$ htdocs/user/index.php?username=$1 [L,QSA]

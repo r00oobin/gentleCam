@@ -1,0 +1,5 @@
+# ignore congig files
+/config/config.json
+
+# ignore ALL files .idea
+/.idea/
